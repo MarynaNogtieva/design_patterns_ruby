@@ -1,7 +1,7 @@
 class Product
   attr_accessor :id, :name
 
-  def intialize(id, name)
+  def initialize(id, name)
     @id = id
     @name = name
   end
