@@ -14,7 +14,7 @@ class SetTextCommand
   end
 
   def unexecute
-    editor.text = prev_text
+    editor.remove_text
     editor
   end
 end

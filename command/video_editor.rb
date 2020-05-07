@@ -6,7 +6,7 @@ class VideoEditor
     @text = ''
   end
 
-  def remove_test
+  def remove_text
     self.text = ''
     text
   end
