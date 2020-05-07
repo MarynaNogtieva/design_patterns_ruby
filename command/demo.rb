@@ -1,5 +1,6 @@
 require_relative 'command_interface'
 require_relative 'undoable_command_interface'
+require_relative 'abstract_command'
 require_relative 'video_editor'
 require_relative 'history'
 require_relative 'set_text_command'
@@ -14,7 +15,7 @@ class Demo
     editor.set_contrast(7)
     editor.set_text('When I was 6 years old, I saw, once, .. ')
     puts editor.to_s
-    
+
     # execute commands
     contrast_command = SetContrastCommand.new(
       history: history,

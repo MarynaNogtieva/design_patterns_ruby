@@ -1,16 +1,14 @@
-class SetTextCommand
-  attr_accessor :history, :editor, :text, :prev_text
+class SetTextCommand  < AbstractCommand
+  attr_accessor :text
 
   def initialize(history:, editor:, text:)
-    @history = history
-    @editor = editor
+    super(history: history, editor: editor)
     @text = text
     @prev_text = editor.text 
   end
 
-  def execute
+  def do_execute
     editor.set_text(text)
-    history.add(self)
   end
 
   def unexecute
