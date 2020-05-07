@@ -11,6 +11,11 @@ class VideoEditor
     text
   end
 
+  def set_text(text)
+    self.text = text
+    text
+  end
+
   def set_contrast(number)
     self.contrast = number
     contrast
