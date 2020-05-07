@@ -4,6 +4,7 @@ require_relative 'video_editor'
 require_relative 'history'
 require_relative 'set_text_command'
 require_relative 'set_contrast_command'
+require_relative 'undo_command'
 
 class Demo
   def self.run
@@ -16,6 +17,13 @@ class Demo
       contrast: 3,
     ) 
     contrast_command.execute
-    puts editor.contrast
+    puts editor.to_s
+
+  
+
+    undo_command = UndoCommand.new(history: history)
+    editor = undo_command.execute
+
+    puts editor.to_s
   end
 end

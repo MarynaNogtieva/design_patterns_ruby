@@ -17,5 +17,6 @@ class SetContrastCommand
 
   def unexecute
     editor.contrast = prev_contrast
+    editor
   end
 end
