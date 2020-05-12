@@ -7,8 +7,6 @@ class AbstractStock
 
   def add_observer(observer)
     observers << observer
-
-    observers
   end
 
   def remove_observer(observer)
