@@ -13,7 +13,7 @@ module StrategyInterface
       # https://docs.ruby-lang.org/en/2.4.0/globals_rdoc.html
       # $1 - The Nth group of the last successful match. May be > 1.
       method_name = $1
-      raise IteratorInterface::InteratorInterfaceNotImplemented.new("#{klass.class.name} needs to implement '#{method_name}' for interface #{self.name}!")
+      raise IteratorInterface::StrategyInterfaceMethodNotImplemented.new("#{klass.class.name} needs to implement '#{method_name}' for interface #{self.name}!")
     end
   end
 end
