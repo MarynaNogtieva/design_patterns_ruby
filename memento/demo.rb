@@ -18,7 +18,7 @@ module Memento
      
       ############ Create history
       history = Memento::History.new
-      history.add_memnto(memento: document_state)
+      history.add_memento_state(memento_state: document_state)
 
       puts "Document before changes: #{document}"
   

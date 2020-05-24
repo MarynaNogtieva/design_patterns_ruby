@@ -9,8 +9,8 @@ module Memento
 
     # @param memento - content, font_size, font_name  args 
     # of the DocumentState instance
-    def add_memnto(memento:)
-      memento_list << memento
+    def add_memento_state(memento_state:)
+      memento_list << memento_state
     end
 
  
