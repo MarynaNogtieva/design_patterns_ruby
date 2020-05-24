@@ -7,10 +7,10 @@ module IteratorInterface
   end
 
   module Methods
-    def method_not_implemented(klass)
+    def method_not_implemented(klass_obj)
       caller.first.match(/in \`(.+)\'/)
         method_name = $1
-        raise IteratorInterface::InteratorInterfaceNotImplemented.new("#{klass.class.name} needs to implement '#{method_name}' for interface #{self.name}!")
+        raise IteratorInterface::InteratorInterfaceNotImplemented.new("#{klass_obj.class.name} needs to implement '#{method_name}' for interface #{self.name}!")
     end
   end
 end
