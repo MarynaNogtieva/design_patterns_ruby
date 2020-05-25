@@ -1,3 +1,4 @@
+# Context
 class ChatClient
   attr_accessor :encryptor
   def initialize(encryptor)
