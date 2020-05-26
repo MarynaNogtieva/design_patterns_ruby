@@ -4,7 +4,7 @@ class ServiceDeskWindow < Window
 
   protected
 
-  def on_close
+  def on_closing
     puts "Saving conversation"
   end
 end
