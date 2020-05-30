@@ -4,6 +4,7 @@ require_relative 'status_bar'
 require_relative 'stock_list_view'
 require_relative 'abstract_stock'
 require_relative 'stock'
+# When data on object changes and we need to notify other objects about these changes.
 
 class Demo
   def self.run
