@@ -1,4 +1,4 @@
+# Operation/Visitor
 class AudioFilter
-  def apply(segment)
-  end
+  def apply(segment); end
 end
